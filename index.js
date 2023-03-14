@@ -24,20 +24,20 @@ function distanceTravelledInFeet(blockA, blockB){
 }
 
 function calculatesFarePrice(start, destination){
-let distanceTravelled;
+let distanceCoverd;
 if(destination > start){
-    distanceTravelled = (destination - start)*264;
+    distanceCoverd = (destination - start)*264;
 }
     else {
-        distanceTravelled= (start - destination)*264
+        distanceCoverd= (start - destination)*264
     }
 
 
-if(distanceTravelled < 400) {
+if(distanceCoverd < 400) {
     return 0;
-}else if(distanceTravelled <2000){
-    return(distanceTravelled-400)*0.02;
-}else if(distanceTravelled > 2000 && distanceTravelled<2500){
+}else if(distanceCoverd <2000){
+    return(distanceCoverd-400)*0.02;
+}else if(distanceCoverd > 2000 && distanceCoverd<2500){
     return 25;
 }
 else{
